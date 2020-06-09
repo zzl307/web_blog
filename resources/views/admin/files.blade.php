@@ -1,5 +1,5 @@
 @extends('admin.layouts.app')
-@section('title','Files')
+@section('title', '文件')
 @section('content')
     <div class="card mb-3">
         <div class="card-header">

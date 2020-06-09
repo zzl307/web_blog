@@ -17,7 +17,7 @@
         ]);?>
     </script>
     <?php
-    $has_sidebar_image = isset($admin_sidebar_bg_image) && $admin_sidebar_bg_image;
+        $has_sidebar_image = isset($admin_sidebar_bg_image) && $admin_sidebar_bg_image;
     ?>
     @if($has_sidebar_image)
         <style>
@@ -43,74 +43,74 @@
                 <?php
                 $menus = [
                     [
-                        'name' => 'Dashboard',
+                        'name' => '控制台',
                         'icon' => 'tachometer',
                         'route' => 'admin.index'
                     ],
                     [
-                        'name' => 'Writing',
+                        'name' => '写作',
                         'icon' => 'pencil',
                         'route' => 'post.create'
                     ],
                     [
                         'is_parent' => true,
-                        'name' => 'Resources',
+                        'name' => '提交',
                         'icon' => 'list-alt',
                         'children' => [
                             [
-                                'name' => 'Posts',
+                                'name' => '提交列表',
                                 'icon' => 'book',
                                 'route' => 'admin.posts'
                             ],
                             [
-                                'name' => 'Pages',
+                                'name' => '新pages',
                                 'icon' => 'file-text',
                                 'route' => 'admin.pages'
                             ],
                             [
-                                'name' => 'Comments',
+                                'name' => '评论',
                                 'icon' => 'comments',
                                 'route' => 'admin.comments'
                             ],
                             [
-                                'name' => 'Tags',
+                                'name' => '标签',
                                 'icon' => 'tags',
                                 'route' => 'admin.tags'
                             ],
                             [
-                                'name' => 'Categories',
+                                'name' => '分类',
                                 'icon' => 'folder',
                                 'route' => 'admin.categories'
                             ],
                             [
-                                'name' => 'Users',
+                                'name' => '用户',
                                 'icon' => 'users',
                                 'route' => 'admin.users'
                             ],
                             [
-                                'name' => 'IP',
+                                'name' => 'IP地址',
                                 'icon' => 'internet-explorer',
                                 'route' => 'admin.ips'
                             ],
                             [
-                                'name' => 'Images',
+                                'name' => '图片',
                                 'icon' => 'image',
                                 'route' => 'admin.images'
                             ],
                             [
-                                'name' => 'Files',
+                                'name' => '文件',
                                 'icon' => 'file-archive-o',
                                 'route' => 'admin.files'
                             ]
                         ]
                     ],
                     [
-                        'name' => 'Settings',
+                        'name' => '设置',
                         'icon' => 'cog',
                         'route' => 'admin.settings'
                     ],
                     [
-                        'name' => 'Application',
+                        'name' => '服务器详情',
                         'icon' => 'cube',
                         'route' => 'admin.app'
                     ],

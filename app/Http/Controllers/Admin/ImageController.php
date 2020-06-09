@@ -27,6 +27,7 @@ class ImageController extends Controller
         $images = $this->imageRepository->getAll(32);
         $images->withPath(route('admin.images'));
         $image_count = $this->imageRepository->count();
+
         return view('admin.images', compact('images', 'image_count'));
     }
 
@@ -35,6 +36,7 @@ class ImageController extends Controller
         $images = $this->imageRepository->getAll(32);
         $images->withPath(route('admin.images'));
         $image_count = $this->imageRepository->count();
+
         return view('admin.partials.image_list', compact('images', 'image_count'));
     }
 
@@ -50,10 +52,12 @@ class ImageController extends Controller
         $type = $request->input('type', null);
         if ($request->expectsJson() || ($type != null && $type == 'xrt')) {
             $result = $this->imageRepository->uploadImageForBlog($request, false);
+
             return response()->json($result, array_key_exists('error', $result) ? 500 : 200);
         } else {
             if ($this->imageRepository->uploadImageForBlog($request, true))
                 return back()->with('success', __('web.UPLOAD_SUCCESS'));
+                
             return back()->withErrors(__('web.UPLOAD_FAIL'));
         }
     }

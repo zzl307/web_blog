@@ -1,5 +1,5 @@
 @extends('admin.layouts.app')
-@section('title','Pages')
+@section('title', 'Pages')
 @section('content')
 @section('action')
     <a class="btn btn-sm btn-outline-success" href="{{ route('page.create') }}">New</a>

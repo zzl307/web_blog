@@ -1,5 +1,5 @@
 @extends('admin.layouts.app')
-@section('title','Users')
+@section('title', '用户')
 @section('content')
     <table class="table table-striped">
         <thead>

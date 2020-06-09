@@ -1,5 +1,5 @@
 @extends('admin.layouts.app')
-@section('title','Comments')
+@section('title', '评论')
 @section('content')
 @section('action')
     @if($unverified_count>0)

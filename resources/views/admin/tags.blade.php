@@ -1,5 +1,5 @@
 @extends('admin.layouts.app')
-@section('title','Tags')
+@section('title', '标签')
 @section('content')
 @section('action')
     <button class="btn btn-sm btn-outline-success" data-toggle="modal" data-target="#add-tag-modal">New</button>

@@ -1,5 +1,5 @@
 @extends('admin.layouts.app')
-@section('title','IPs')
+@section('title', 'IP地址')
 @section('content')
     @if($ips->isEmpty())
         <div class="text-center"> -_- NO IP.</div>

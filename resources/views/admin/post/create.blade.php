@@ -1,5 +1,5 @@
 @extends('admin.layouts.app', ['include_msg'=>false])
-@section('title', 'Writing')
+@section('title', '写作')
 @section('css')
     <link href="//cdn.bootcss.com/select2/4.0.3/css/select2.min.css" rel="stylesheet">
 @endsection

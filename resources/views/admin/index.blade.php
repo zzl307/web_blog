@@ -1,5 +1,5 @@
 @extends('admin.layouts.app')
-@section('title', 'Overview')
+@section('title', '总览')
 @section('css')
     <style>
         .row a {

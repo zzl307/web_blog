@@ -1,5 +1,5 @@
 @extends('admin.layouts.app')
-@section('title','Posts')
+@section('title', '提交')
 @section('content')
     @section('action')
         <a data-toggle="tooltip" data-placement="left" title="Download all posts as markdown file" class="btn btn-sm btn-outline-dark" href="{{ route('post.download-all') }}">Download</a>

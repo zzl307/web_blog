@@ -1,5 +1,5 @@
 @extends('admin.layouts.app')
-@section('title','Settings')
+@section('title', '设置')
 @section('content')
     <form id="setting-form" action="{{ route('admin.save-settings') }}" method="post">
         <div class="pl-3 pr-3">

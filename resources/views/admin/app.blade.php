@@ -1,5 +1,5 @@
 @extends('admin.layouts.app')
-@section('title','Application')
+@section('title', '服务器详情')
 @section('content')
     <div>
         <h4>ENV info</h4>

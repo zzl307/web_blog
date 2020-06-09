@@ -2,7 +2,7 @@
     @forelse($images as $image)
         <div class="col col-md-3 col-sm-4 col-6" style="margin-bottom: .4rem">
             <div class="card img-container">
-                <img class="card-img-top" src="{{ getImageViewUrl($image->url,null,250) }}">
+                <img class="card-img-top" src="{{ getImageViewUrl($image->url, null, 250) }}"> 
                 <div class="img-overlay">
                     <div class="actions align-self-center text-center">
                         <span class="text-success d-block">{{ $image->name }}</span>
