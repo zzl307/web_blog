@@ -99,58 +99,58 @@ return [
                     "placeholder" => "支持 text 和 html",
                     'label' => '其他信息',
                 ],
-                [
-                    'name' => 'social_facebook',
-                    'label' => 'Facebook link',
-                ],
-                [
-                    'name' => 'social_twitter',
-                    'label' => 'Twitter link',
-                ],
-                [
-                    'name' => 'social_github',
-                    'label' => 'GitHub link',
-                ],
+                // [
+                //     'name' => 'social_facebook',
+                //     'label' => 'Facebook link',
+                // ],
+                // [
+                //     'name' => 'social_twitter',
+                //     'label' => 'Twitter link',
+                // ],
+                // [
+                //     'name' => 'social_github',
+                //     'label' => 'GitHub link',
+                // ],
                 [
                     'name' => 'social_weibo',
-                    'label' => 'Weibo link',
+                    'label' => '微博链接',
                 ],
-                [
-                    'name' => 'social_instagram',
-                    'label' => 'Instagram link',
-                ],
-                [
-                    'name' => 'social_googleplus',
-                    'label' => 'Google+ link',
-                ],
-                [
-                    'name' => 'social_tumblr',
-                    'label' => 'Tumblr link',
-                ],
-                [
-                    'name' => 'social_stackoverflow',
-                    'label' => 'StackOverflow link',
-                ],
-                [
-                    'name' => 'social_dribbble',
-                    'label' => 'Dribbble link',
-                ],
-                [
-                    'name' => 'social_linkedin',
-                    'label' => 'LinkedIn link',
-                ],
-                [
-                    'name' => 'social_gitlab',
-                    'label' => 'GitLab link',
-                ],
-                [
-                    'name' => 'social_pinterest',
-                    'label' => 'Pinterest link',
-                ],
-                [
-                    'name' => 'social_youtube',
-                    'label' => 'YouTube link',
-                ],
+                // [
+                //     'name' => 'social_instagram',
+                //     'label' => 'Instagram link',
+                // ],
+                // [
+                //     'name' => 'social_googleplus',
+                //     'label' => 'Google+ link',
+                // ],
+                // [
+                //     'name' => 'social_tumblr',
+                //     'label' => 'Tumblr link',
+                // ],
+                // [
+                //     'name' => 'social_stackoverflow',
+                //     'label' => 'StackOverflow link',
+                // ],
+                // [
+                //     'name' => 'social_dribbble',
+                //     'label' => 'Dribbble link',
+                // ],
+                // [
+                //     'name' => 'social_linkedin',
+                //     'label' => 'LinkedIn link',
+                // ],
+                // [
+                //     'name' => 'social_gitlab',
+                //     'label' => 'GitLab link',
+                // ],
+                // [
+                //     'name' => 'social_pinterest',
+                //     'label' => 'Pinterest link',
+                // ],
+                // [
+                //     'name' => 'social_youtube',
+                //     'label' => 'YouTube link',
+                // ],
             ]
         ],
         [

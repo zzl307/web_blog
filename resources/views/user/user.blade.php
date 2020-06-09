@@ -9,15 +9,15 @@
                         <div class="col-md-3 p-3">
                             <nav class="nav nav-pills flex-column font-weight-bold">
                                 <a class="nav-link {{ request()->url() == route('user.show', $user->name)?'active':'' }}" href="{{ route('user.show', $user->name) }}">{{ $user->name }}</a>
-                                <a class="nav-link {{ request()->url() == route('user.settings')?'active':'' }}" href="{{ route('user.settings') }}">Settings</a>
-                                <a class="nav-link {{ request()->url() == route('user.pictures')?'active':'' }}" href="{{ route('user.pictures') }}">Pictures</a>
-                                <a class="nav-link {{ request()->url() == route('user.socials')?'active':'' }}" href="{{ route('user.socials') }}">Socials</a>
+                                <a class="nav-link {{ request()->url() == route('user.settings')?'active':'' }}" href="{{ route('user.settings') }}">设置</a>
+                                <a class="nav-link {{ request()->url() == route('user.pictures')?'active':'' }}" href="{{ route('user.pictures') }}">头像</a>
+                                {{-- <a class="nav-link {{ request()->url() == route('user.socials')?'active':'' }}" href="{{ route('user.socials') }}">Socials</a> --}}
                                 <?php
-                                $user = auth()->user();
-                                $unreadNotificationsCount = $user->unreadNotifications->count();
+                                    $user = auth()->user();
+                                    $unreadNotificationsCount = $user->unreadNotifications->count();
                                 ?>
                                 <a class="nav-link {{ request()->url() == route('user.notifications')?'active':'' }}" href="{{ route('user.notifications') }}">
-                                    Notifications
+                                    通知
                                     @if($unreadNotificationsCount)
                                         <span class="badge badge-danger">{{ $unreadNotificationsCount }}</span>
                                     @endif

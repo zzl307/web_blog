@@ -2,51 +2,51 @@
 @section('title', '服务器详情')
 @section('content')
     <div>
-        <h4>ENV info</h4>
+        <h4>配置</h4>
         <table class="table table-striped table-bordered">
             <tbody>
             <tr>
-                <th>Laravel version</th>
+                <th>Laravel 版本</th>
                 <td>{{ app()->version() }}</td>
-                <th>Application name</th>
+                <th>App 名称</th>
                 <td>{{ config('app.name') }}</td>
 
             </tr>
             <tr>
-                <th>Mail username</th>
+                <th>邮件名称</th>
                 <td>{{ config('mail.username') }}</td>
-                <th>Mail password</th>
+                <th>邮件密码</th>
                 <td>{{ config('mail.password') ? '******' : '' }}</td>
 
             </tr>
             <tr>
-                <th>Mail host</th>
+                <th>邮件地址</th>
                 <td>{{ config('mail.host') }}</td>
-                <th>Mail port</th>
+                <th>邮件端口</th>
                 <td>{{ config('mail.port') }}</td>
             </tr>
             <tr>
-                <th>DB connection</th>
+                <th>数据库</th>
                 <td>{{ config('database.default') }}</td>
-                <th>DB name</th>
+                <th>数据库名称</th>
                 <td>{{ config('database.connections.'.config('database.default').'.database') }}</td>
             </tr>
             </tbody>
         </table>
     </div>
     <div>
-        <h4>Test Application Mail</h4>
+        <h4>测试邮件</h4>
         <form method="post" action="{{ route('admin.app.send-mail') }}">
             {{ csrf_field() }}
             <div class="form-group">
-                <label for="email">Send to</label>
+                <label for="email">发送给</label>
                 <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com">
             </div>
             <div class="form-group">
-                <label for="content">Email plain text</label>
-                <textarea name="content" class="autosize-target form-control" id="content" rows="3" placeholder="whatever"></textarea>
+                <label for="content">邮件内容</label>
+                <textarea name="content" class="autosize-target form-control" id="content" rows="3" placeholder="邮件内容"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Send test email</button>
+            <button type="submit" class="btn btn-primary">发送测试邮件</button>
         </form>
     </div>
     <div class="mt-3">

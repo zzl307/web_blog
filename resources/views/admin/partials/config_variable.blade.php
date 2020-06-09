@@ -6,9 +6,9 @@ $final_value = isset($$variable_name) ? $$variable_name : $default;
 ?>
 <div class="form-group row">
     @if(isset($variable['label']))
-        <label for="{{ $variable['name'] }}" class="col-sm-4 col-form-label">{{ $variable['label'] }}</label>
+        <label for="{{ $variable['name'] }}" class="col-sm-2 col-form-label">{{ $variable['label'] }}</label>
     @endif
-    <div class="col-sm-8">
+    <div class="col-sm-10">
         @if($type == 'textarea')
             <textarea id="{{ $variable_name }}" class="form-control autosize-target"
                       placeholder="{{ $variable['placeholder'] or '' }}"
