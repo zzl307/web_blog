@@ -23,7 +23,12 @@ class HomeController extends Controller
 
     public function index()
     {
-        return view('index');
+        $page_size = get_config('page_size', 7);
+        $posts = $this->postRepository->pagedPosts($page_size);
+        
+        return view('post.index', compact('posts'));
+
+        // return view('index');
     }
 
     public function search(Request $request)
