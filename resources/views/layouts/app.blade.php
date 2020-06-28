@@ -5,6 +5,7 @@
         $site_title = (isset($site_title) && $site_title ? $site_title : '');
         $site_description = (isset($site_description) && $site_description ? $site_description : '');
     @endphp
+    <meta name="baidu-site-verification" content="CvjTmTA9sa">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
