@@ -30,6 +30,6 @@
   },
   "dependencies": {
     "ajv-keywords": "^3.4.0",
-    "npm": "^6.1.0"
+    "npm": "^6.14.6"
   }
 }
