@@ -22,7 +22,7 @@
     "laravel-mix": "^1.0",
     "magnific-popup": "^1.1.0",
     "masonry-layout": "^4.2.0",
-    "node-sass": "^4.9.0",
+    "node-sass": "^7.0.0",
     "popper.js": "^1.14.3",
     "simplemde": "^1.11.2",
     "smooth-scroll": "^14.2.0",
